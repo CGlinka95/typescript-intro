@@ -14,7 +14,9 @@ TypeScript is a **Strongly Typed Language** which means that it **demands** for 
   
 - **Dynamically typed** = A compiler assigns a type to all variables at run-time. The type of a variable is decided based on its value. Programs written using dynamic-typed languages are more flexible but will compile even if they contain errors.
 
-- **Implicit** = The language will infer what data type you are using. 
+  *TypeScript is a **statically typed** language and JavaScript is a **dynamically typed** language*
+
+- **Implicit** = The language will infer what data type you are using.
   
   *Example*
 
@@ -22,7 +24,7 @@ TypeScript is a **Strongly Typed Language** which means that it **demands** for 
     let myName = "Chris"
     ```
 
-- **Explicit** = You strictly state what data trype you are using. 
+- **Explicit** = You strictly state what data trype you are using. This is also referred to as **annotation.**
   
   *Example*
 
@@ -30,7 +32,40 @@ TypeScript is a **Strongly Typed Language** which means that it **demands** for 
     let myName: string = "Chris"
     ```
 
-*TypeScript is a **statically typed** language and JavaScript is a **dynamically typed** language*
+- **Tuple** = Tuples are arrays with a **fixed** number of elements. They provide a fixed size container that can store values of multiple types, where **order and structure are very important.**
+  
+  *Example*
+
+    ```typescript
+    let myTuple: [string, number, boolean] = ["Chris", 28, true]
+    ```
+
+- **Object** = An object is an **instance** that includes a **collection** of **key-value pairs**.
+  
+  *Example*
+
+    ```typescript
+    const exampleObj = {
+      prop1: "Chris",
+      prop2: true,
+    }
+    ```
+
+- **Enums** = Unlike most TypeScript features, Enums are not a type-level addition to JavaScript but something added to the language at runtime.
+  
+  *Example*
+
+    ```typescript
+    enum Grade {
+      U = 1,
+      D,
+      C,
+      B,
+      A,
+    }
+    ```
+
+    *TypeScript will adjust the rest of the enummerables depending on the enum given. Instead of the above being 0-4, it is instead 1-5.*
 
 ## TypeScript Benefits
 
